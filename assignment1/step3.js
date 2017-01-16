@@ -2,7 +2,7 @@ var https = require('https');
 function getAndPrintHTML (options) {
 
 
- https.get(requestOptions,function(response){
+ https.get(options,function(response){
   var buf = "";
     response.setEncoding('utf8');
 
@@ -25,4 +25,4 @@ var requestOptions = {
   path: '/http-examples/step3.html'
 };
 
-getAndPrintHTML();
+getAndPrintHTML(requestOptions);
