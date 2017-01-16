@@ -6,8 +6,8 @@ var requestOptions = {
 };
 
 function printRiverse (html) {
-
-  /* Write your code here! */
+var newStr = html.split("").reverse().join("");
+ console.log(newStr);
 
 }
 

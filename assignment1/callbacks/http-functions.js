@@ -13,7 +13,7 @@ https.get(options,function(response){
 
       response.on('end', function() {
       console.log('Response stream complete.');
-      console.log(buf);
+      callback(buf);
     });
  });
 };
